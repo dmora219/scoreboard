@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: darkgreen;
+}
+@font-face {
+    font-family: 'scoreBoard';
+    src: url('score.ttf') format('truetype');
+  }
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding-bottom: 20px;
+    font-family: 'scoreBoard', sans-serif;
+}
+.score {
+    background: #0a0001;
+    font-size: 90px;
+    color: #F94F6D;
+    width: 120px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding-top: 12px;
+}
+.new-game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.scoring-btn{
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding-top: 3px;
+    transition: 0.6;
+}
+.scoring-btn:active { 
+    transform: scale(0.98); 
+}
+
+.newGame{
+    background-color: darkgreen;
+    color: darkorange;
+    padding: 10px 20px;
+    transition: 0.6;
+}
+.newGame:active{
+    transform: scale(1.1);
+}
+.countdown{
+    color: orange;
+    border: 1px dotted white;
+    padding: 20px 10px;
+}
+.result{
+    color: goldenrod;
+}
+.highlight{
+    background-color: gold;
+}
